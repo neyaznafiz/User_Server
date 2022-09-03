@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const userRoute = require('./routes/v1/user.route')
+const limiter = require('./middleware/limiter')
 
 
 const app = express()
@@ -9,6 +10,8 @@ const port = process.env.PORT || 5000
 app.use(cors())
 app.use(express.json())
 
+//the rate limiting middleware to all requests
+// app.use(limiter)
 
 // route
 app.use('/api/v1/user', userRoute)
