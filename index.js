@@ -20,13 +20,13 @@ app.use('/api/v1/user', userRoute)
 
 // home route
 app.get('/', (req, res) => {
-    res.send('The user server is running.')
+    res.send('The user server is running...')
 })
 
 
 // not found api
 app.all('*', (req, res) => {
-    res.send('No route found.')
+    res.send('Route not found.')
 })
 
 
