@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "gender": "Male",
+      "contact": "1-770-736-8031 x56442",
+      "address": "Kulas Light, Gwenborough",
+      "photoUrl": "https://via.placeholder.com/150/92c952"
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "gender": "Male",
+      "contact": "010-692-6593 x09125",
+      "address": "Victor Plains, Wisokyburgh",
+      "photoUrl": "https://via.placeholder.com/150/771796"
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "gender": "Male",
+      "contact": "1-463-123-4447",
+      "address": "Nathan, McKenziehaven",
+      "photoUrl": "https://via.placeholder.com/150/24f355"
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "gender": "Male",
+      "email": "Julianne.OConner@kory.org",
+      "contact": "493-170-9623 x156",
+      "address":"Hoeger Mall, South Elvis",
+      "photoUrl": "https://via.placeholder.com/150/d32776"
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "gender": "Male",
+      "contact": "(254)954-1289",
+      "address":"Skiles Walks, Roscoeview",
+      "photoUrl": "https://via.placeholder.com/150/f66b97"
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "gender": "Male",
+      "contact": "1-477-935-8478 6430",
+      "address": "Norberto Crossing, South Christy",
+      "photoUrl": "https://via.placeholder.com/150/56a8c2"
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "gender": "Male",
+      "contact": "210 067 6132",
+      "address": "Rex Trail, Howemouth",
+      "photoUrl": "https://via.placeholder.com/150/b0f7cc"
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "gender": "Male",
+      "contact": "586 493 6943 140",
+      "address": "Ellsworth Summit, Aliyaview",
+      "photoUrl": "https://via.placeholder.com/150/54176f"
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "gender": "Male",
+      "contact": "(775)976-6794-41206",
+      "address": "Dayna Park, Bartholomebury",
+      "photoUrl": "https://via.placeholder.com/150/51aa97"
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "gender": "Male",
+      "contact": "024-648-3804",
+      "address": "Kattie Turnpike, Lebsackbury",
+      "photoUrl": "https://via.placeholder.com/150/810b14"
+    }
+  ]
