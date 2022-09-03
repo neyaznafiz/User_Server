@@ -11,6 +11,8 @@ module.exports.getRandomUser = (req, res) => {
     })
 }
 
+
+
 // get all user and limit user api controller
 module.exports.getAllUser = (req, res,) => {
     const { limit } = req.query
@@ -40,10 +42,11 @@ module.exports.getUserById = (req, res) => {
 }
 
 
+
+
 // save/post user api controller
 module.exports.saveAUser = (req, res) => {
     const { id, name, gender, contact, address, photoUrl } = req.body
-
 
     if (id && name && gender && contact && address && photoUrl) {
         user.push(req.body)
@@ -65,6 +68,7 @@ module.exports.saveAUser = (req, res) => {
     })
 }
 
+
 // update user api controller
 module.exports.updateUser = (req, res) => {
     const newData = req.body
@@ -73,19 +77,13 @@ module.exports.updateUser = (req, res) => {
 
     const oldData = user.find(user => user.id === Number(id))
 
-    // newData.id = id
-    // newData.name = req.body.name
-    // newData.gender = req.body.gender
-    // newData.contact = req.body.contact
-    // newData.address = req.body.address
-    // newData.photoUrl = req.body.photoUrl
-
     res.status(200).send({
         success: true,
         message: 'success',
         data: { ...oldData, ...newData }
     })
 }
+
 
 
 // user delete api controller

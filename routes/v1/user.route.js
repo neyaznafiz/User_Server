@@ -7,10 +7,12 @@ router
     .route('/random')
     .get(userController.getRandomUser)
 
+    
 router
     .route('/')
     .get(userController.getAllUser)
     .post(userController.saveAUser)
+
 
 router
     .route('/:id')
