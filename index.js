@@ -20,7 +20,7 @@ app.use('/api/v1/user', userRoute)
 
 // home route
 app.get('/', (req, res) => {
-    res.send('The user server is running...')
+    res.sendFile(__dirname + '/public/index.html')
 })
 
 
