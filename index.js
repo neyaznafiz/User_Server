@@ -11,23 +11,30 @@ app.use(cors())
 app.use(express.json())
 
 //the rate limiting middleware to all requests
-// app.use(limiter)
+app.use(limiter)
+
 
 // route
 app.use('/api/v1/user', userRoute)
 
 
+// home route
 app.get('/', (req, res) => {
-    res.send('The user server is running')
+    res.send('The user server is running.')
 })
 
+
+// not found api
 app.all('*', (req, res) => {
     res.send('No route found.')
 })
 
+
+// server running api
 app.listen(port, () => {
     console.log('Listening to port', port);
 })
+
 
 // others error handler
 process.on("unhandledRejection", (error) => {

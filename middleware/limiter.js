@@ -1,4 +1,3 @@
-
 const { default: rateLimit } = require("express-rate-limit")
 
 const limiter = rateLimit({

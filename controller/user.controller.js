@@ -1,7 +1,7 @@
 let user = require('../public/user.json')
 
 
-// get random api
+// get random user api controller
 module.exports.getRandomUser = (req, res) => {
 
     res.status(200).json({
@@ -30,7 +30,7 @@ module.exports.getAllUser = (req, res,) => {
 
 
 
-// filter by id
+// get user filter by id api controller
 module.exports.getUserById = (req, res) => {
     const { id } = req.params
     const foundUser = user.find(user => user.id === Number(id))
@@ -40,7 +40,6 @@ module.exports.getUserById = (req, res) => {
         data: foundUser
     })
 }
-
 
 
 
@@ -86,7 +85,7 @@ module.exports.updateUser = (req, res) => {
 
 
 
-// user delete api controller
+// delete user api controller
 module.exports.deleteUser = (req, res) => {
     const { id } = req.params
     const filter = { _id: id }
