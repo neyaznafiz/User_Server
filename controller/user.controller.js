@@ -19,7 +19,14 @@ module.exports.getAllUser = (req, res,) => {
 
 // save/post user api controller
 module.exports.saveAUser = (req, res) => {
-    const all = req.body
-    user.push(all)
-    res.send(user);
+    user.push(req.body)
+    res.status(200).json({
+        success: true,
+        message: 'success',
+        data: user
+    })
+    res.status(500).send({
+        success: false,
+        error: 'Internal server error.'
+    })
 }
