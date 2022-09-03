@@ -1,12 +1,5 @@
 [
-    {
-      "id": 1,
-      "name": "Leanne Graham",
-      "gender": "Male",
-      "contact": "1-770-736-8031 x56442",
-      "address": "Kulas Light, Gwenborough",
-      "photoUrl": "https://via.placeholder.com/150/92c952"
-    },
+    
     {
       "id": 2,
       "name": "Ervin Howell",
