@@ -20,7 +20,25 @@ module.exports.getAllUser = (req, res,) => {
 // save/post user api controller
 module.exports.saveAUser = (req, res) => {
     user.push(req.body)
-    res.status(200).json({
+    res.status(200).send({
+        success: true,
+        message: 'success',
+        data: user
+    })
+    res.status(500).send({
+        success: false,
+        error: 'Internal server error.'
+    })
+}
+
+// user delete
+module.exports.deleteUser = (req, res) => {
+    const { id } = req.params
+    const filter = { _id: id }
+
+    user = user.filter(user => user.id !== Number(id))
+
+    res.status(200).send({
         success: true,
         message: 'success',
         data: user

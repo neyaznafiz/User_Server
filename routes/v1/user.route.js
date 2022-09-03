@@ -8,5 +8,9 @@ router
     .get(userController.getAllUser)
     .post(userController.saveAUser)
 
+router
+    .route('/:id')
+    .delete(userController.deleteUser)
+
 
 module.exports = router
